@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(
+  90deg,
+  hsl(240deg 100% 20%) 9%,
+  hsl(199deg 100% 31%) 40%,
+  hsl(158deg 100% 42%) 46%,
+  hsl(120deg 100% 50%) 49%,
+  hsl(89deg 100% 50%) 49%,
+  hsl(59deg 100% 50%) 48%,
+  hsl(66deg 100% 50%) 48%,
+  hsl(111deg 100% 50%) 48%,
+  hsl(155deg 100% 50%) 48%,
+  hsl(134deg 100% 50%) 51%,
+  hsl(92deg 100% 50%) 59%,
+  hsl(49deg 100% 50%) 99%
+);;
+    background-color: black;
+}
+
+#start{
+    height: auto;
+    width: 30%;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#nav{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ul_list{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#ul_list li{
+    width: 40%;
+}
+
+#ul_list li a{
+    padding: 8px 0 8px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    border-radius: 5px;
+}
+
+
+#ul_list li:first-child a:hover,
+#ul_list li:first-child a.active{
+    background-color: black;
+    color: white;
+}
+#ul_list li:nth-child(2) a:hover,
+#ul_list li:nth-child(2) a.active2{
+    background-color: black;
+    color: white;
+}
+#ul_list li:nth-child(3) a:hover,
+#ul_list li:nth-child(3) a.active2{
+    background-color: black;
+    color: white;
+}
+
+/* search bar  */
+
+#search-container{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#search-container .search{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#search-container .search input{
+    height: 40px;
+    width: 300px;
+    padding: 0 15px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+}
+
+#search-container .search button{
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+/* Main section */
+
+#main-container .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container .main h1{
+    margin-top: 10px;
+    font-size: 23px;
+}
+#main-container .main h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#main-container .main img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Humidity and Wind speed  */
+
+#main-c2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    padding-bottom: 1rem;
+}
+#main-c2 .cont1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-c2 .cont1 .head{
+    padding: 10px 10px;
+    background-color: lightblue;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 900;
+}
+#main-c2 .cont1 h1{
+    margin: 10px 0;
+    font-size: 23px
+}
+#main-c2 .cont1 p{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+#main-c2 .cont1 p span{
+    font-weight: 600;
+}
+#main-c2 .cont1 button{
+    margin: 10px 0;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+/* container 2 */
+
+#main-c2 .b1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#main-c2 .cont2{
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-c2 .b1 .cont2 .head{
+    padding: 10px 10px;
+    background-color: lightblue;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 900;
+}
+#main-c2 .b1 .cont2 h1{
+    margin: 10px 0;
+    font-size: 23px
+}
+#main-c2 .b1 .cont2 p{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+#main-c2 .b1 .cont2 p span{
+    font-weight: 600;
+}
+#main-c2 .b1 .cont2 button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Air Quality  */
+
+#aqi_main{
+    height: 8vh;
+    min-width: 200px;
+    background-color: #0ebac5;
+}
+#aqi_main h1{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#aqi_m2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+#aqi_m2 h2{
+    margin: 0 20px 10px 20px;
+}
+#aqi_m2 h3{
+    font-size: 40px;
+}
+#aqi_m2 h4{
+    font-size: 30px;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#aqi_m2 p{
+    display: flex;
+    column-gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 20px;
+}
